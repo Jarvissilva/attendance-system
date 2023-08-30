@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import Protect from "components/protect";
+import jwt from "jsonwebtoken";
 import connectDatabase from "helpers/connectDatabase";
 import ClassroomModel from "models/classroom";
-import jwt from "jsonwebtoken";
 import fetchApi from "helpers/fetchApi";
 import Toast from "components/toast";
 

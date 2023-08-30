@@ -145,6 +145,8 @@ export async function getServerSideProps(ctx) {
     teacher: verifiedToken._id,
   }).sort({ "attendances.date": -1 });
 
+  if (!foundClassroom) return { notFound: true };
+
   return { props: { classroom: JSON.parse(JSON.stringify(foundClassroom)) } };
 }
 

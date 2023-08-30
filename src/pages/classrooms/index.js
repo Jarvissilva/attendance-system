@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Protect from "components/protect";
 import jwt from "jsonwebtoken";
 import connectDatabase from "helpers/connectDatabase";
 import ClassroomModel from "models/classroom";

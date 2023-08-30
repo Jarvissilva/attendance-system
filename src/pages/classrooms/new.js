@@ -1,6 +1,5 @@
 import { useState } from "react";
 import fetchApi from "helpers/fetchApi";
-import Protect from "components/protect";
 import Toast from "components/toast";
 
 const NewClassroom = () => {

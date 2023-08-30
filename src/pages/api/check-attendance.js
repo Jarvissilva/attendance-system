@@ -41,8 +41,6 @@ const handler = async (req, res) => {
         };
       });
 
-      console.log(studentAttendance);
-
       res.status(200).json({
         success: true,
         attendance: studentAttendance,

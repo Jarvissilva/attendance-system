@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import fetchApi from "helpers/fetchApi";
 
-const Register = () => {
+const Verify = ({ setReAuthenticate }) => {
   const [message, setMessage] = useState("Verifying please wait");
   const router = useRouter();
 
@@ -12,6 +12,7 @@ const Register = () => {
         verificationToken: router.query.token,
       });
       setMessage(res.message);
+      setReAuthenticate(true);
       setTimeout(
         () => router.push(res.success ? "/classrooms" : "/teacher/login"),
         2000
@@ -32,4 +33,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Verify;

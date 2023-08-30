@@ -3,7 +3,7 @@ import Link from "next/link";
 import fetchApi from "helpers/fetchApi";
 import Toast from "components/toast";
 
-const Register = () => {
+const Login = () => {
   const [formData, setFormData] = useState({ email: "" });
   const [message, setMessage] = useState("");
 
@@ -80,4 +80,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
